@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IN+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scrollbar-width: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat';
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2px 30px;
+        }
+
+        nav ul {
+            list-style: None;
+            display: flex;
+            gap: 20px;
+            color: #781954;
+
+        }
+
+        .body1 {
+            height: 450px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+        }
+
+        .content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            padding-left: 90px;
+            padding-top: 50px;
+            padding-right: 30px;
+        }
+
+        .choose {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .choose button {
+            margin-top: 10px;
+            background-color: #781954;
+            color: white;
+            border: none;
+        }
+
+        .description {
+            font-size: 50px;
+
+
+        }
+
+        .small-description {
+            font-size: 15px;
+        }
+
+        .description,
+        .small-description {
+            font-weight: 400;
+        }
+
+        .choose select {
+            width: 600px;
+            height: 50px;
+            padding: 5px 10px;
+            /* border: none; */
+        }
+
+        .choose button {
+            height: 40px;
+            width: 100px;
+        }
+
+        .destination-class {
+            padding-left: 90px;
+            padding-top: 50px;
+            padding-right: 30px;
+            margin-top: 20px;
+        }
+
+        .destination-heading h1 {
+            font-size: 30px;
+            font-weight: 600;
+            color: #781954;
+
+        }
+
+        .destination-heading {
+            margin-bottom: 30px;
+            color: #781954;
+        }
+
+        .card-parent {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card-1 {
+            flex-basis: 31%;
+            margin-bottom: 25px;
+        }
+
+        .card-1 img {
+            margin-bottom: 10px;
+            aspect-ratio: 3/2;
+        }
+
+        .card-description {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .card-town {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .card-yapping {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .card-1 button {
+            padding: 10px 20px;
+            background-color: #781954;
+            color: white;
+            border: 0px;
+
+        }
+
+
+        .contact-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(115, 115, 115, 0.147);
+        }
+
+        .contact-header {
+            margin-bottom: 30px;
+        }
+
+        .contact-header h1 {
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+        .contact-form div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input {
+            width: 600px;
+            height: 40px;
+            border: none;
+        }
+
+        .contact-form select {
+            width: 600px;
+            height: 40px;
+            border: none;
+            padding: 10px 10px;
+        }
+
+        .contact-info button {
+            padding: 10px 40px;
+            border: none;
+            background-color: #781954;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav>
+        <div class="title">
+            <h1 style="font-family: cedarville cursive;color: #781954; font-size: 50px;">explor<span style="font-family: cedarville cursive;color: #378576; font-size: 50px;">er</span></h1>
+        </div>
+        <div class="links">
+            <ul>
+                <li>Hotels</li>
+                <li>Bike Rentals</li>
+                <li>Restaurants</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search and body -->
+    <section class="body1">
+        <div class="content">
+            <div class="small-description">
+                <p style="color: #781954;font-size: 20px;">WELCOME TO EXPLORER</p>
+            </div>
+
+            <div class="description">
+                <p style="color: #781954;">Your Adventure <br>Travel Expert in <br> the <strong>SOUTH</strong></p>
+            </div>
+            <div class="choose">
+                <select name="" id="">
+                    <option value="x1">choose</option>
+                    <option value="x1">x1</option>
+                    <option value="x1">x1</option>
+                </select>
+                <button>EXPLORE</button>
+            </div>
+
+
+        </div>
+        <div class="images">
+            <img src="image1.jpg" width="800px" height="500px">
+        </div>
+    </section>
+    <br>
+    <!-- destination section -->
+    <section class="destination-class">
+        <div class="destination-heading">
+            <h1>Destinations</h1>
+            <p>Just for you. Because you and your bike are special to us!</p>
+        </div>
+        <div class="card-parent">
+            <div class="card-1">
+                <img src="card-1.jpg" alt="" width="100%">
+                <p class="card-description">Never Ending Paddy Fields <br> and Narrow Roads</p>
+                <p class="card-town">Pollachi</p>
+                <p class="card-yapping">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tenetur itaque
+                    quam dolore voluptas mollitia, id debitis non eaque hic sequi eligendi? Impedit saepe animi eos. In
+                    provident esse asperiores?</p>
+                <button class="card-button">READ MORE</button>
+            </div>
+            <div class="card-1">
+                <img src="card-1.jpg" alt="" width="100%">
+                <p class="card-description">Small Ride Across Town in <br> Mid Summer Heat</p>
+                <p class="card-town">Thanjavur</p>
+                <p class="card-yapping">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tenetur itaque
+                    quam dolore voluptas mollitia, id debitis non eaque hic sequi eligendi? Impedit saepe animi eos. In
+                    provident esse asperiores?</p>
+                <button class="card-button">READ MORE</button>
+            </div>
+            <div class="card-1">
+                <img src="card-1.jpg" alt="" width="100%">
+                <p class="card-description">Catching a Short <br> Break at the Lotus Pond</p>
+                <p class="card-town">Chidambaram</p>
+                <p class="card-yapping">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tenetur itaque
+                    quam dolore voluptas mollitia, id debitis non eaque hic sequi eligendi? Impedit saepe animi eos. In
+                    provident esse asperiores?</p>
+                <button class="card-button">READ MORE</button>
+            </div>
+            <div class="card-1">
+                <img src="card-1.jpg" alt="" width="100%">
+                <p class="card-description">Road Trip enroute the <br> mountains and forests</p>
+                <p class="card-town">Masinagudi</p>
+                <p class="card-yapping">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tenetur itaque
+                    quam dolore voluptas mollitia, id debitis non eaque hic sequi eligendi? Impedit saepe animi eos. In
+                    provident esse asperiores?</p>
+                <button class="card-button">READ MORE</button>
+            </div>
+            <div class="card-1">
+                <img src="card-1.jpg" alt="" width="100%">
+                <p class="card-description">Fall in love with the divine <br> agraharams</p>
+                <p class="card-town">Kumbakkonam</p>
+                <p class="card-yapping">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tenetur itaque
+                    quam dolore voluptas mollitia, id debitis non eaque hic sequi eligendi? Impedit saepe animi eos. In
+                    provident esse asperiores?</p>
+                <button class="card-button">READ MORE</button>
+            </div>
+            <div class="card-1">
+                <img src="card-1.jpg" alt="" width="100%">
+                <p class="card-description">Energy driven drive through<br> the windmills</p>
+                <p class="card-town">Tirunelveli</p>
+                <p class="card-yapping">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tenetur itaque
+                    quam dolore voluptas mollitia, id debitis non eaque hic sequi eligendi? Impedit saepe animi eos. In
+                    provident esse asperiores?</p>
+                <button class="card-button">READ MORE</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact form -->
+
+    <section class="contact-info">
+        <div class="contact-box">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+                <p>Our Sales Team will reach out to you ASAP!</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="Home Town">Your Home Town</label>
+                        <select name="" id="">
+                            <option value="">Tambaram</option>
+                            <option value="">Chrompet</option>
+                            <option value="">Pallavaram</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Home Town">Where would you like to go?</label>
+                        <select name="" id="">
+                            <option value="">Tambaram</option>
+                            <option value="">Chrompet</option>
+                            <option value="">Pallavaram</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="name">Contact Number</label>
+                        <input type="text">
+                    </div>
+                    <button>SUBMIT INTEREST</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+</body>
+
+</html>
